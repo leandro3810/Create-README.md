@@ -8,27 +8,6 @@ from xml.sax.saxutils import XMLGenerator
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 "CLASS-PROJECTING" 
 ("Classtesto"): (class)XMLGenerator; # type: ignore
 
