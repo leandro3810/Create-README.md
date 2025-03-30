@@ -1,5 +1,5 @@
 {
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.codeActions.triggerOnFocusChange": true,
-    "editor.columnSelection": true
+    "editor.columnSelection": false
 }
