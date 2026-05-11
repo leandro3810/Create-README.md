@@ -59,11 +59,11 @@ def main():
     t.pensize(2)
 
     # Desenha formas geométricas
-    desenhar_quadrado(t, x=-300, y=100, tamanho=100, cor="blue")
-    desenhar_quadrado(t, x=-150, y=100, tamanho=100, cor="red")
-    desenhar_retangulo(t, x=50, y=100, largura=200, altura=100, cor="green")
-    desenhar_triangulo(t, x=-50, y=-50, tamanho=150, cor="yellow")
-    desenhar_quadrado(t, x=150, y=-100, tamanho=80, cor="purple")
+    desenhar_quadrado(t, -300, 100, tamanho=100, cor="blue")
+    desenhar_quadrado(t, -150, 100, tamanho=100, cor="red")
+    desenhar_retangulo(t, 50, 100, largura=200, altura=100, cor="green")
+    desenhar_triangulo(t, -50, -50, tamanho=150, cor="yellow")
+    desenhar_quadrado(t, 150, -100, tamanho=80, cor="purple")
 
     # Oculta o cursor e aguarda clique para fechar
     t.hideturtle()
