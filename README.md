@@ -18,6 +18,8 @@ Sou apaixonado por tecnologia, inovação e desenvolvimento de soluções criati
 
 - [leandro3810-python-lord](https://github.com/leandro3810/github.io/leandro3810-python-lord)  
   Projeto destaque pessoal, mostrando minhas habilidades em Python.
+- [Minha outra página](./outra-pagina.md)  
+  Página adicional com uma apresentação rápida.
 
 ## 📫 Como me encontrar
 - GitHub: [leandro3810](https://github.com/leandro3810)
