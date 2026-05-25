@@ -1,54 +1,74 @@
-from io import IncrementalNewlineDecoder
-from optparse import IndentedHelpFormatter
-from socket import J1939_NLA_PAD, J1939_NO_ADDR, J1939_NO_NAME, J1939_NO_PGN, J1939_PGN_ADDRESS_CLAIMED, J1939_PGN_ADDRESS_COMMANDED, J1939_PGN_MAX, J1939_PGN_REQUEST
-from tkinter import PROJECTING
-from xml.dom import xmlbuilder
-from xml.etree.ElementTree import fromstring
-from xml.sax.saxutils import XMLGenerator
+"""
+Python Lord - Desenho de formas geométricas com Turtle
+Autor: Leandro
+"""
+
+import turtle
 
 
+def desenhar_quadrado(t, x, y, tamanho, cor):
+    """Desenha um quadrado na posição (x, y) com o tamanho e cor especificados."""
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.fillcolor(cor)
+    t.begin_fill()
+    for _ in range(4):
+        t.forward(tamanho)
+        t.right(90)
+    t.end_fill()
 
-"CLASS-PROJECTING" 
-("Classtesto"): (class)XMLGenerator; # type: ignore
+
+def desenhar_retangulo(t, x, y, largura, altura, cor):
+    """Desenha um retângulo na posição (x, y) com largura, altura e cor especificados."""
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.fillcolor(cor)
+    t.begin_fill()
+    for comprimento in [largura, altura, largura, altura]:
+        t.forward(comprimento)
+        t.right(90)
+    t.end_fill()
 
 
-property ("Meu jogos");
+def desenhar_triangulo(t, x, y, tamanho, cor):
+    """Desenha um triângulo equilátero na posição (x, y)."""
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.fillcolor(cor)
+    t.begin_fill()
+    for _ in range(3):
+        t.forward(tamanho)
+        t.left(120)
+    t.end_fill()
 
-("Estali meu jogo nesse programa");(J1939_NO_NAME);
 
-("Estali meu jogo nesse programa");(J1939_NO_ADDR);
+def main():
+    # Configuração da janela
+    tela = turtle.Screen()
+    tela.title("Python Lord - Formas Geométricas")
+    tela.bgcolor("black")
+    tela.setup(width=800, height=600)
 
-("x = 1 Altura - lagura do quadrado");
+    # Configuração do pincel
+    t = turtle.Turtle()
+    t.speed(5)
+    t.pencolor("white")
+    t.pensize(2)
 
-("y = 1 Altura - Lagura do quadrado");
+    # Desenha formas geométricas
+    desenhar_quadrado(t, -300, 100, tamanho=100, cor="blue")
+    desenhar_quadrado(t, -150, 100, tamanho=100, cor="red")
+    desenhar_retangulo(t, 50, 100, largura=200, altura=100, cor="green")
+    desenhar_triangulo(t, -50, -50, tamanho=150, cor="yellow")
+    desenhar_quadrado(t, 150, -100, tamanho=80, cor="purple")
 
-(J1939_PGN_MAX);   (J1939_PGN_ADDRESS_COMMANDED);
+    # Oculta o cursor e aguarda clique para fechar
+    t.hideturtle()
+    tela.mainloop()
 
-(x = 1 , y = 1);("Altura _ Lagura x = 1 j1939_PGN_REQUEST") * ("Altura _ Lagura y = 1 J1939_PGN_ADDRESS_CLAIMED");
 
-("10 = 10 * (20 = 20) ");
-
-("0.1< 2.0");
-
-(' 0.1, 2.0   10 = 10 * 20 = 20');
-
-("Do meu jogo");
-
-("Desenho") ("x =1 Altura - Lagura do quadrado")("y = 1 Altura - Lagura do quadrado");
- 1/1_2/3 sobre x=1\y=10;
-("figura do desenho") ("x =10 Altura - Lagura do quadrado")("y = 10 Altura - Lagura do quadrado");
-           20/20_10/1.25 y=10\x=50;
- ("Jogabilidade do desenho") ("x =1 Altura - Lagura do quadrado")("y = 1 Altura - Lagura do quadrado");
- ("J1939_NO_PGN"),("J1939_NLA_PAD")<("j1939_PGN-MAX"),("j1939_PGN_ADDRESS_COMMANDED");
-     ("Sensibilidade do desenho") ("x =100% Altura - Lagura do quadrado")("y = 100% Altura - Lagura do quadrado");
-         x=1<y=2.(altura*lagura);
-   tamanho do quadrado 2.00=2.00;
-   ("Desenho") ("x =1 Altura - Lagura do quadrao")("y = 1 Altura - Lagura do quadrado");("figura do desenho") ("x =10 Altura - Lagura do quadrado")("y = 10 Altura - Lagura do quadrado");
-  ("jogobilidade do desenho") ("x =1 Altura - Lagura do quadrado")("y =1 Altura - Lagura do quadrado")("sensinilidade do desenho") ("x =100% Altura - lagura do quadrado")("y =100% Altura - Lagura do quadrado");
-  figura ,jogabilidade ,sensibilidade;
-      x=1<y=2.(altura*lagura);
-   tamanho do quadrado 2.00=2.00;
-  figura do jogo;
-    jogabilidade do jogo;
-
-  jogabilidade do jogo para window;
+if __name__ == "__main__":
+    main()
