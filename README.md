@@ -40,10 +40,6 @@ Estou sempre em busca de aprender novas linguagens e ferramentas para aprimorar 
 
 ## 🌟 Projetos em Destaque
 
-- [**Python Lord**](https://github.com/leandro3810/Create-README.md)  
-  Projeto pessoal em Python, demonstrando habilidades de programação com desenho de formas geométricas via Turtle.
-
----
 
 ## 📫 Como me encontrar
 
