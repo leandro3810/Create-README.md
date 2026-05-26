@@ -38,8 +38,6 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-> As pastas `env/` e `env1/` foram removidas do repositório. Recrie o ambiente virtual localmente se necessário.
-
 ## ▶️ Como executar
 
 1. Tenha Python 3 instalado.
