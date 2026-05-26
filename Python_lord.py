@@ -6,6 +6,8 @@ Autor: Leandro
 import random
 import turtle
 
+CORES_DISPONIVEIS = ["blue", "red", "green", "yellow", "purple", "orange", "cyan", "magenta"]
+
 
 def desenhar_quadrado(t, x, y, tamanho, cor):
     """Desenha um quadrado na posição (x, y) com o tamanho e cor especificados."""
@@ -83,8 +85,7 @@ def desenhar_cena_padrao(t):
 
 def desenhar_cena_aleatoria(t):
     """Desenha uma cena com cores aleatórias."""
-    cores = ["blue", "red", "green", "yellow", "purple", "orange", "cyan", "magenta"]
-    random.shuffle(cores)
+    cores = random.sample(CORES_DISPONIVEIS, k=len(CORES_DISPONIVEIS))
     desenhar_quadrado(t, -320, 150, tamanho=110, cor=cores[0])
     desenhar_quadrado(t, -170, 150, tamanho=110, cor=cores[1])
     desenhar_retangulo(t, 10, 150, largura=220, altura=110, cor=cores[2])
@@ -125,8 +126,11 @@ def main():
     # Novas funcionalidades de interação
     tela.listen()
     tela.onkey(redesenhar_padrao, "p")
+    tela.onkey(redesenhar_padrao, "P")
     tela.onkey(redesenhar_aleatorio, "r")
+    tela.onkey(redesenhar_aleatorio, "R")
     tela.onkey(limpar, "c")
+    tela.onkey(limpar, "C")
 
     tela.mainloop()
 
