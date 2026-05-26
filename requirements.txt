@@ -1,0 +1,2 @@
+# Este projeto usa apenas bibliotecas padrão do Python (turtle, random).
+# Nenhuma dependência externa é necessária.
