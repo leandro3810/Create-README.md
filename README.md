@@ -31,7 +31,7 @@ python Python_lord.py
 
 ## 📁 Arquivo principal
 
-- `/home/runner/work/Create-README.md/Create-README.md/Python_lord.py`
+- `Python_lord.py`
 
 ---
 

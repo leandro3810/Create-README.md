@@ -85,7 +85,7 @@ def desenhar_cena_padrao(t):
 
 def desenhar_cena_aleatoria(t):
     """Desenha uma cena com cores aleatórias."""
-    cores = random.sample(CORES_DISPONIVEIS, k=len(CORES_DISPONIVEIS))
+    cores = random.sample(CORES_DISPONIVEIS, k=7)
     desenhar_quadrado(t, -320, 150, tamanho=110, cor=cores[0])
     desenhar_quadrado(t, -170, 150, tamanho=110, cor=cores[1])
     desenhar_retangulo(t, 10, 150, largura=220, altura=110, cor=cores[2])
