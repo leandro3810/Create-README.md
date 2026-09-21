@@ -48,6 +48,13 @@ python Python_lord.py
 ## 📄 Página do projeto
 
 - Veja a página do projeto em [`pagina-do-projeto.md`](./pagina-do-projeto.md)
+- Acompanhe o dashboard em [`dashboard-do-projeto.md`](./dashboard-do-projeto.md)
+
+## 📊 Dashboard do projeto
+
+O dashboard centraliza visão geral, funcionalidades, status e próximos passos:
+
+- [`dashboard-do-projeto.md`](./dashboard-do-projeto.md)
 
 ---
 
