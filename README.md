@@ -1,47 +1,41 @@
-# Python Lord 🎨🐢
+# Python Lord 🚀🐢
 
-Projeto em Python com **Turtle** para desenhar formas geométricas na tela.
+Agora o projeto foi reescrito como um **jogo arcade em Turtle**, com foco em jogabilidade e sistemas automáticos.
 
-## ✅ Funcionalidades
+## ✅ O que mudou
 
-- Desenho de:
-  - Quadrado
-  - Retângulo
-  - Triângulo
-  - **Círculo** (novo)
-  - **Estrela** (novo)
-- Cena padrão com múltiplas formas
-- **Modo aleatório de cores** (novo)
-- Atalhos de teclado para interação (novo)
+- Controle do jogador com teclado
+- Coleta de energia para ganhar pontos
+- Inimigos com movimentação automática
+- Progressão automática de dificuldade
+- Sistema de vidas
+- HUD com pontuação e nível em tempo real
+- Reinício rápido da partida
 
-## ⌨️ Atalhos
+## 🎮 Controles
 
-- `P` → redesenha a cena padrão
-- `R` → redesenha com cores aleatórias
-- `C` → limpa a tela
+- `↑` / `W` → mover para cima
+- `↓` / `S` → mover para baixo
+- `←` / `A` → mover para a esquerda
+- `→` / `D` → mover para a direita
+- `R` → reiniciar o jogo
+
+## 🤖 Sistemas automatizados
+
+- Surgimento automático de inimigos
+- Surgimento automático de itens coletáveis
+- Aumento automático de dificuldade conforme a pontuação
+- Mensagens automáticas de avanço de nível
 
 ## 🛠️ Ambiente
 
-Este projeto usa **somente bibliotecas padrão do Python** (`turtle`, `random`) — nenhuma instalação extra é necessária.
+O projeto usa apenas bibliotecas padrão do Python (`turtle`, `random`, `math`).
 
 ### Pré-requisitos
 
 - Python 3.9 ou superior
 
-### Configuração do ambiente virtual (opcional)
-
-```bash
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# Linux / macOS
-source venv/bin/activate
-```
-
 ## ▶️ Como executar
-
-1. Tenha Python 3 instalado.
-2. Execute:
 
 ```bash
 python Python_lord.py
