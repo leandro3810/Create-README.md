@@ -45,6 +45,10 @@ python Python_lord.py
 
 - `Python_lord.py`
 
+## 📄 Página do projeto
+
+- Veja a página do projeto em [`pagina-do-projeto.md`](./pagina-do-projeto.md)
+
 ---
 
 Feito por **Leandro** 🚀
