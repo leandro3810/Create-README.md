@@ -88,6 +88,7 @@ class PythonLordGame:
         self.level = 1
         self.lives = 3
         self.running = True
+        self.keys = {"Left": False, "Right": False, "Up": False, "Down": False}
         self.frames = 0
         self.spawn_enemy_every = 50
         self.spawn_collectible_every = 80
@@ -213,13 +214,18 @@ class PythonLordGame:
 
     def check_enemy_collisions(self):
         """Remove vidas ao tocar em inimigos."""
-        for enemy in self.enemies:
+        for enemy in self.enemies[:]:
             if self.player.distance(enemy) < DISTANCIA_COLISAO:
                 self.lives -= 1
+                enemy.hideturtle()
+                self.enemies.remove(enemy)
                 self.player.goto(0, -220)
                 self.keys = {key: False for key in self.keys}
+                self.show_temporary_message("Você foi atingido!")
                 if self.lives <= 0:
                     self.game_over()
+                elif not self.enemies:
+                    self.spawn_enemy()
                 return
 
     def apply_progression(self):
